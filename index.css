@@ -82,3 +82,37 @@ footer div:last-child p {
     margin: 5px 0;
     font-size: 14px;
 }
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 5px; /* Very small padding to save space */
+        text-align: center;
+        position: static; /* Allows the header to flow naturally */
+    }
+
+    header h1 {
+        display: block;
+        font-size: 20px; /* Smaller title */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        float: none; /* Removes float to allow centering */
+        display: flex;
+        justify-content: center; /* Keeps them horizontal and centered */
+        flex-wrap: wrap; /* If the screen is tiny, they will wrap to a second line */
+        gap: 10px; /* Small space between links */
+    }
+
+    nav a {
+        margin-left: 0; /* Remove the large 25px margin */
+        font-size: 14px; /* Smaller text to fit the screen */
+        padding: 5px;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+}
