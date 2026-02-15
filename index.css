@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background-color: #4d20b4;   /* Purple */
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    color: white;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e0b3ff;   /* Light purple */
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+/* Space for fixed navbar */
+main {
+    margin-top: 90px;
+    text-align: center;
+}
+
+main img {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+/* ===== FOOTER ===== */
+/* ===== FOOTER ===== */
+footer {
+    background-color: #3e0468;  /* Dark purple */
+    color: white;
+    padding: 25px 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Upper div (icons) */
+footer div:first-child {
+    margin-bottom: 15px;
+}
+
+footer div:first-child img {
+    width: 30px;
+    margin: 0 15px;   /* equal space left & right */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer div:first-child img:hover {
+    transform: scale(1.2);
+}
+
+/* Lower div (text) */
+footer div:last-child p {
+    margin: 5px 0;
+    font-size: 14px;
+}

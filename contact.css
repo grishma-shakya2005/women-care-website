@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #f9f6ff, #f3f0ff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main container */
+.main-container {
+    margin-top: 60px;
+    padding: 40px 60px;
+}
+
+/* Heading */
+.main-container h1 {
+    font-size: 38px;
+    color: #20049b;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* Paragraph */
+.main-container p {
+    font-size: 18px;
+    color: #0a0909;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.form-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   /* Align from top */
+    gap: 40px;
+}
+
+/* Form Section */
+.form-section {
+    width: 48%;
+}
+
+/* Form Card */
+.form-section form {
+    background: #efe6ff;   /* Light purple */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(123, 44, 191, 0.15);
+}
+
+/* Labels */
+.form-section label {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Inputs */
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    border-color: #9d4edd;
+    outline: none;
+    box-shadow: 0 0 6px rgba(157, 78, 221, 0.3);
+}
+
+/* Textarea */
+.form-section textarea {
+    resize: none;
+}
+
+/* Button */
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-section button:hover {
+    background: #5a189a;
+}
+
+/* Image Section */
+.image-section {
+    width: 52%;   /* Bigger than form */
+    display: flex;
+    justify-content: flex-end;  /* Push image to right */
+    align-items: flex-start;
+}
+
+.image-section img {
+    width: 100%;
+    height: 700px;   /* Bigger image */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    /* Reduce overall container padding */
+    .main-container {
+        padding: 20px 20px; 
+        margin-top: 20px;
+    }
+
+    .form-image-container {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap between form and image */
+    }
+
+    .form-section,
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        height: auto;
+        max-height: 400px; 
+    }
+
+    .image-section {
+        margin-bottom: 20px; 
+    }
+}
